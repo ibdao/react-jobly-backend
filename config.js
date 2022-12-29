@@ -13,7 +13,7 @@ const PORT = +process.env.PORT || 3001;
 function getDatabaseUri() {
   return (process.env.NODE_ENV === "test")
       ? "postgresql://kungpaodao:foofoo@localhost/jobly_test"
-      : process.env.DATABASE_URL || "postgres://jobly_database_user:K71kM3BaCP31voH4MX6ZaPmZhibc4kcU@dpg-cech8kg2i3mjqnp80kpg-a/jobly_database";
+      : process.env.DATABASE_URL || "postgresql://kungpaodao:foofoo@localhost/jobly";
 }
 
 // Speed up bcrypt during tests, since the algorithm safety isn't being tested
